@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=fr>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>ShellStream streaming</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Solway|Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="../style/stylemain.css"/>        
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.png" alt="Logo" id="logo"/>
+            <nav>
+                <a href="../index.html"><h1>ShellStream</h1></a>
+            </nav>
+            <h2>Site de streaming</h2>
+            <form action="searching.html" method="POST">
+                <input id="search" placeholder="Rechercher votre série" name="search"/>
+                <button type="submit"><img src="../img/loupe.png" id="loupe" alt="Loupe"/></button>
+            </form>
+        </header>
+        <main>
+            <section id=relate>
+                <img id="gd_poster" src="../img/ds.png" alt="Poster Demon slayer"/>
+                <h2 class="inliner">Demon Slayer</h2>
+                <form action="desc.html" method="POST" class="inliner">
+                    <label for=fav>Retirer des favoris?</label>
+                    <button type="submit" name=favori id=fav><img src="../img/star_full.png" alt="En favori" id=etoile></button>
+                </form>
+                <dl>
+                    <dt>Réalisateur</dt>
+                    <dd>Haruo Sotozaki</dd>
+                    <dt>Produit par</dt>
+                    <dd>ufotable</dd>
+                    <dt>Date du premier épisode</dt>
+                    <dd><time datetime="2019-04-06">6 avril 2019</time></dd>
+                    <dt>Nombre d'épisodes</dt>
+                    <dd>26 épisodes / 1 saison (actuellement)</dd>
+                    <dt>Date du dernier épisode</dt>
+                    <dd><time datetime="2019-09-28">28 septembre 2019</time></dd>
+                </dl>
+                <section>
+                    <h3>Synopsis</h3>
+                    <p>Dans un Japon de l'ère Taishō, Tanjirō est le fils aîné d'une famille dont le père est décédé. Pour subvenir aux besoins de celle-ci, il part vendre du charbon dans une autre ville. Malgré les difficultés de la vie, ils réussissent à trouver un peu de bonheur dans leur quotidien. Un jour, à cause des rumeurs qui circulent à propos d'un démon (鬼, Oni) mangeur d'hommes qui traînerait dans les parages la nuit tombée, il est dans l'impossibilité de rentrer chez lui et finit par passer la nuit chez un Bon Samaritain de la ville. Seulement, tout bascule à son retour lorsqu'il retrouve sa famille massacrée par un démon. Nezuko, l'une de ses petites sœurs, est la seule survivante mais elle a aussi été transformée en démon… Étonnamment, celle-ci montre encore des signes d'émotions et de pensées humaines. C'est un long périple qui attend le jeune héros et sa petite sœur afin de trouver un antidote pour la rendre à nouveau humaine et venger le reste de sa famille.</p>
+                </section>
+                <section>
+                    <h3>Regarder un épisode?</h3>
+                    <a href="viewing.html">Lien vers un épisode</a>
+                </section>
+                <section>
+                    <h3>Ajouter un commentaire?</h3>
+                    <form action="descf.html" method="POST">
+                        <label for="com" class="blokus">Commentaire:</label>
+                        <img src="../img/profil.png" alt="photo de profil" id="icone"/>
+                        <textarea placeholder="Votre commentaire ici (ça marchera pas de toute façon)" id="com"></textarea>
+                        <button type="submit" id="subcom">Envoyer</button>
+                    </form>
+                    <div class=commentaire>
+                        <img src="../img/logoko.png" alt="PdP Konoko"/>
+                        <section>
+                            <h4>Konoko</h4>
+                            <p>J'ai joui.</p>
+                        </section>   
+                    </div>
+                    <div class=commentaire>
+                        <img src="../img/logorid.png" alt="PdP Rid"/>
+                        <section>
+                            <h4>Ridleynator</h4>
+                            <p>Moi aussi.</p>    
+                        </section>   
+                    </div>
+                    <div class=commentaire>
+                        <img src="../img/logoairi.png" alt="PdP Airi"/>
+                        <section>
+                            <h4>Mastermind_Chan_Uwu</h4>
+                            <p>2/10 needs more dead people.</p>
+                        </section>         
+                    </div>
+
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>©®™ 2019. Made in Yago</p>
+            <nav>
+                <a href="kisuije.html">Qui sommes nous?</a>
+                <a href="kisuije.html"> <img src="../img/faire_don.png" alt="Bouton Don" id="donate_small"></a>
+            </nav>
+        </footer>
+    </body>
+</html>

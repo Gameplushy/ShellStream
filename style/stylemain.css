@@ -1,0 +1,322 @@
+html{
+    background-color: #000000;
+}
+
+main{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+body{
+    width: 1024px;
+    margin: 0 auto;
+    border : 1px solid rgb(0, 112, 6);
+}
+
+h1,h2,h3,h4,p,label{
+    color : #FFFFFF;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+dd,dt{
+    color:#FFFFFF;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2,h3,h4,input,dt,label{
+    font-family: 'Solway', serif;
+}
+
+h2,#parant{
+    text-align: center;
+}
+
+h2:hover{
+    text-decoration: underline dashed rgb(0, 112, 6);
+}
+
+p,a,dd{
+    font-family: 'Lato', sans-serif;
+}
+
+h1:hover{
+    color: rgb(173, 255, 47);
+}
+
+header *, footer *{  /*"Inlineifie" le contenu du header et footer*/
+    display: inline;
+    margin : auto 10px;
+}
+h1, header a, header nav{
+    margin-left: 0;
+}
+
+header{
+    border-bottom: 3px dashed rgb(0, 112, 6);
+    padding: 0.5em 0;
+}
+
+footer{
+    border-top: 3px dashed rgb(0, 112, 6);
+    padding: 0.5em 0;
+    align-content: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #000000;
+}
+
+#grilleindex{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1024px;
+    grid-column-gap: 1em;
+}
+#bienvenue{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#nope{
+    text-decoration: line-through;
+}
+
+#loupe{
+    height:1em;
+}
+
+#logo{
+    max-height:50px;
+    margin-right: 0;
+}
+
+a{
+   color: rgb(26, 112, 0);
+}
+
+dt{
+    text-decoration: underline rgb(0, 112, 6);
+}
+
+a:hover, a:focus{
+    color: rgb(29, 172, 0);
+    text-decoration: none;  
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus, button:hover, button:focus{
+    box-shadow: 0px 0px 2px #FFFFFF;
+    border : 0.5px solid rgb(29, 172, 0);
+}
+
+header button{
+    padding : 0;
+}
+
+#TitraRid{
+    text-decoration-color: rgb(172, 0, 0);
+}
+
+.sticker{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 10px;
+    padding: 0.1em 0.1em;
+    overflow-y: auto;
+    height: 200px;
+    border : 0.5px solid #FFFFFF;
+    grid-column: 2;
+    margin-bottom: 1em;
+}
+
+.sticker_se{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 10px;
+    padding: 0.1em 0.1em;
+    overflow-y: auto;
+    height: 125px;
+    border : 1px solid #FFFFFF;
+}
+.poster{
+    height:100px;
+    margin-top: 5px;
+    grid-column: 1;
+}
+
+div h3{
+    margin-top: 5px 
+}
+
+section:first-child p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+div p{
+    margin-bottom: 3px;
+}
+
+video{
+    display: block;
+    margin : 0 auto;
+    height: 500px;
+}
+
+#relate{
+    position: relative;
+}
+
+#gd_poster{
+    height: 450px;
+    float: left; /**http://css.mammouthland.net/positionner-image-float-html-css.php**/
+    margin-right: 1em;
+}
+
+dl{
+    display: block;
+    margin : 10px auto;
+    max-width: max-content;
+    border : 1px solid rgb(0, 112, 6);
+}
+
+.inliner{
+    display: inline;
+}
+
+.blokus{
+    display: block;
+}
+
+#etoile{
+    height: 10px;
+}
+
+#icone,.commentaire img{
+    height: 50px;
+    margin : 1px;
+}
+
+.commentaire img:hover{
+    border: 1px dashed rgb(0, 112, 6);
+    margin : 0.33px;
+}
+
+textarea{
+    width:700px;
+    height: 50px;
+}
+
+#subcom{
+    display: block;
+}
+
+.present,.commentaire{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    border-top: 0.5em double;
+    border-bottom: 0.5em double;
+}
+
+.present{
+    margin: 1em;
+}
+
+#moi{
+    border-color: rgb(29, 172, 0);
+}
+
+#lui{
+    border-color: rgb(172, 0, 0);
+}
+
+.commentaire{
+    margin : 1em auto;
+    border : 1px dashed rgb(0, 112, 6);
+}
+
+.present img{
+    width:100px;
+    grid-column: 1;
+    margin : 2px;
+}
+
+.present section, .commentaire section{
+    grid-column: 2;
+}
+
+.donate{
+    display: inline-block;
+    width:33.33%;
+    margin : 0 auto;
+}
+
+h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.commentaire:first-of-type,.sticker_se:first-of-type{
+    margin-top: 1em;
+}
+
+.sticker_se + .sticker_se{
+    margin-top: 1em;
+}
+
+#donate_small{
+    height:1em;
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px){ /**Iphone 6/7/8**/
+    #grilleindex{
+        width: 375px;
+        display: block;
+    }
+    header *,#logo{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header h2{
+        display : none;
+    }
+    body{
+        max-width: 100%;
+    }
+    video{
+        max-width: 100%;
+    }
+    #gd_poster{
+        float: none;
+        display: block;
+        margin:0 auto;
+        height: 400px;
+    }
+    .inliner{
+        text-align: center;
+    }
+    a:nth-child(2){
+        display: block;
+    }
+    #donate_small{
+        display: block;
+        margin: 5px auto 0 auto;
+    }
+    #titetfav{
+        display: block;
+        width: 98%;
+        margin: 0 auto;
+    }
+    footer nav{
+        margin-right: 0;
+    }
+    #bienvenue p{
+        text-align: center;
+    }
+    .commentaire img{
+        border-right: 1px dashed rgb(0, 112, 6);
+    }
+}
